@@ -1,11 +1,7 @@
 class Solution(object):
 
     def checkIfEvenLength(self, num):
-        length_of_num = 0
-        while num:
-            length_of_num+=1
-            num //=10
-        return length_of_num & 1 == 0
+        return len(str(num)) & 1 == 0
 
     def findNumbers(self, nums):
         """
